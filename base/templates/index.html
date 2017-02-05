@@ -1,5 +1,7 @@
 {% extends 'page.html' %}
 
+{%- block title %}Le Homepage{% endblock -%}
+
 {% block body %}
   <script>
     $.getJSON( "https://api.github.com/repos/inveniosoftware/invenio", function( data ) {
@@ -255,7 +257,6 @@
               packages that collaborate via rich APIs. Pick the packages you
               need and use the full power of Python to extend their
               capabilities.</p>
-              </ul>
             </div>
           </div>
         </div>
